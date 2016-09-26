@@ -21,7 +21,7 @@
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4M-7Z-1QG"/>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNX-VN-s6K"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-nh-9mf">
@@ -36,6 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="appBackground" destination="8bC-Xf-vdC" id="SGy-71-EHF"/>
                         <outlet property="button" destination="L5T-mH-PAU" id="3ZD-1j-wqV"/>
                         <outlet property="slider" destination="Jl9-nh-9mf" id="4s8-eO-Erv"/>
                         <outlet property="textlabel" destination="BUU-ya-2Af" id="bOH-tg-RU0"/>

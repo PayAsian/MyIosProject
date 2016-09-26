@@ -14,6 +14,7 @@ class ViewController: UIViewController
     @IBOutlet private weak var textlabel: UITextField!
     @IBOutlet private weak var button: UIButton!
     @IBOutlet private weak var slider: UISlider!
+    @IBOutlet private weak var appBackground: UIView!
     
     
     
@@ -32,7 +33,8 @@ class ViewController: UIViewController
     @IBAction func buttonClick(sender: UIButton) -> Void
     {
         textlabel.text = "You clicked the button!"
-        textlabel.textColor = UIColor.grayColor()
+        textlabel.textColor = makeRandomColor()
+        appBackground.backgroundColor = makeRandomColor()
     }
 
     private func makeRandomColor() -> UIColor
