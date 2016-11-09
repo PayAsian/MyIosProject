@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--CS1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="CS1" id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6q-6I-HH1">
+                                <rect key="frame" x="65" y="28" width="46" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="ToScreen6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAs-bV-fch"/>
+                                    <action selector="toCS2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xTU-3J-jba"/>
+                                    <action selector="toCS6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQi-0K-war"/>
+                                    <segue destination="pgf-9F-yJc" kind="show" id="zOk-fj-IiD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLs-7D-jfl">
+                                <rect key="frame" x="462" y="28" width="46" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="toCS2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KyU-wi-7Ys"/>
+                                    <segue destination="45n-zo-lYq" kind="show" identifier="toCS2" id="Y90-1P-Feu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My name is Peyton Trevino. My Nationality is Laotian, " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKc-8Z-gey">
+                                <rect key="frame" x="101" y="419" width="593" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="and my birthday is Dec 9, 1999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKW-iF-P5i">
+                                <rect key="frame" x="181" y="477" width="238" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="CroppedMe" translatesAutoresizingMaskIntoConstraints="NO" id="j0K-FL-8Gj">
+                                <rect key="frame" x="192" y="123" width="216" height="288"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a6q-6I-HH1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="2yb-0i-wIW"/>
+                            <constraint firstItem="a6q-6I-HH1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NQH-FQ-2SQ"/>
+                            <constraint firstItem="KLs-7D-jfl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="VE8-6G-So6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KLs-7D-jfl" secondAttribute="trailing" constant="72" id="rvU-Nz-BP2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CS1Rbutton" destination="KLs-7D-jfl" id="35D-wC-26V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="411"/>
+        </scene>
+        <!--CS2-->
+        <scene sceneID="23W-Yz-xQU">
+            <objects>
+                <viewController title="CS2" id="45n-zo-lYq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jbr-Wx-bbi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ynA-Vm-0PQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IqZ-Ni-Zp9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFf-IQ-sVl">
+                                <rect key="frame" x="50" y="28" width="46" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toCS1" id="yk4-mb-dG0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4f-w9-rRs">
+                                <rect key="frame" x="511" y="28" width="46" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <segue destination="DL9-Lg-RX7" kind="show" id="2R8-IX-YN1"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Snow" translatesAutoresizingMaskIntoConstraints="NO" id="Aif-xQ-Gvz">
+                                <rect key="frame" x="120" y="198" width="360" height="204"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am an avid snowboarder. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOu-aW-D01">
+                                <rect key="frame" x="198" y="453" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="A4f-w9-rRs" secondAttribute="trailing" constant="23" id="4Sv-0W-3Br"/>
+                            <constraint firstItem="JFf-IQ-sVl" firstAttribute="leading" secondItem="IqZ-Ni-Zp9" secondAttribute="leadingMargin" constant="30" id="6q1-67-baf"/>
+                            <constraint firstItem="A4f-w9-rRs" firstAttribute="top" secondItem="jbr-Wx-bbi" secondAttribute="bottom" constant="8" id="HVn-1J-25G"/>
+                            <constraint firstItem="JFf-IQ-sVl" firstAttribute="top" secondItem="jbr-Wx-bbi" secondAttribute="bottom" constant="8" id="IOf-Cj-LYG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CI-hd-RZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984" y="411"/>
+        </scene>
+        <!--CS3-->
+        <scene sceneID="Qjm-9a-UDj">
+            <objects>
+                <viewController title="CS3" id="DL9-Lg-RX7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rYQ-5V-YzX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sru-ck-THa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GeN-ba-WlO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhW-br-r4u">
+                                <rect key="frame" x="40" y="20" width="46" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <segue destination="45n-zo-lYq" kind="show" id="7Cg-xy-Wjj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEg-nf-rlf">
+                                <rect key="frame" x="494" y="28" width="46" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <segue destination="feg-9E-EU1" kind="show" id="jD9-2x-Odb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="EEg-nf-rlf" secondAttribute="trailing" constant="40" id="Ca0-IS-DT3"/>
+                            <constraint firstItem="EEg-nf-rlf" firstAttribute="top" secondItem="rYQ-5V-YzX" secondAttribute="bottom" constant="8" id="TLr-Wk-cYe"/>
+                            <constraint firstItem="QhW-br-r4u" firstAttribute="leading" secondItem="GeN-ba-WlO" secondAttribute="leadingMargin" constant="20" id="e8v-oB-1e6"/>
+                            <constraint firstItem="QhW-br-r4u" firstAttribute="top" secondItem="rYQ-5V-YzX" secondAttribute="bottom" id="xwu-7U-Grh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDr-ra-D5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1651" y="411"/>
+        </scene>
+        <!--CS4-->
+        <scene sceneID="DiE-og-qnI">
+            <objects>
+                <viewController title="CS4" id="feg-9E-EU1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2gC-O2-bhG"/>
+                        <viewControllerLayoutGuide type="bottom" id="cDS-wG-MLR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E0O-cC-OOV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ra-eS-cD0">
+                                <rect key="frame" x="36" y="20" width="30" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <segue destination="DL9-Lg-RX7" kind="show" id="VLL-QT-RY0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55E-Bm-FY7">
+                                <rect key="frame" x="499" y="20" width="36" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <segue destination="xo1-7H-GXL" kind="show" id="fwj-qh-rPB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9ra-eS-cD0" firstAttribute="top" secondItem="2gC-O2-bhG" secondAttribute="bottom" id="6aT-IG-Svw"/>
+                            <constraint firstItem="9ra-eS-cD0" firstAttribute="leading" secondItem="E0O-cC-OOV" secondAttribute="leadingMargin" constant="16" id="dRz-ih-I26"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="55E-Bm-FY7" secondAttribute="trailing" constant="45" id="hxb-Lu-PxV"/>
+                            <constraint firstItem="55E-Bm-FY7" firstAttribute="top" secondItem="2gC-O2-bhG" secondAttribute="bottom" id="z9s-dn-US4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jmf-du-pIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2300" y="411"/>
+        </scene>
+        <!--CS5-->
+        <scene sceneID="hSt-d1-Cvy">
+            <objects>
+                <viewController title="CS5" id="xo1-7H-GXL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sKB-Hg-AJf"/>
+                        <viewControllerLayoutGuide type="bottom" id="WXW-2A-zpE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ha7-NY-S4g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqY-IO-PtW">
+                                <rect key="frame" x="513" y="20" width="46" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <segue destination="pgf-9F-yJc" kind="show" id="m8y-N8-fk4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4x-DI-5aM">
+                                <rect key="frame" x="34" y="20" width="46" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <segue destination="feg-9E-EU1" kind="show" id="8HY-aq-QDK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fqY-IO-PtW" secondAttribute="trailing" constant="21" id="6Ds-ow-bjE"/>
+                            <constraint firstItem="fqY-IO-PtW" firstAttribute="top" secondItem="sKB-Hg-AJf" secondAttribute="bottom" id="IcT-GF-swb"/>
+                            <constraint firstItem="L4x-DI-5aM" firstAttribute="leading" secondItem="ha7-NY-S4g" secondAttribute="leadingMargin" constant="14" id="Lqf-fA-d30"/>
+                            <constraint firstItem="L4x-DI-5aM" firstAttribute="top" secondItem="sKB-Hg-AJf" secondAttribute="bottom" id="qQc-2z-Khr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKt-8g-KAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2969" y="411"/>
+        </scene>
+        <!--CS6-->
+        <scene sceneID="vgO-l2-GEJ">
+            <objects>
+                <viewController title="CS6" id="pgf-9F-yJc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Uf-wA-e8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="PiQ-2Y-Qea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f2I-Yo-pHD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT3-hA-sGI">
+                                <rect key="frame" x="39" y="28" width="46" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <segue destination="xo1-7H-GXL" kind="show" id="VeX-CD-st9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sid-ZE-UCD">
+                                <rect key="frame" x="525" y="28" width="46" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toCS1" id="tmV-SO-Wm3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sid-ZE-UCD" firstAttribute="top" secondItem="6Uf-wA-e8q" secondAttribute="bottom" constant="8" id="BP9-zY-KA4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sid-ZE-UCD" secondAttribute="trailing" constant="9" id="YsB-qb-Y4T"/>
+                            <constraint firstItem="BT3-hA-sGI" firstAttribute="leading" secondItem="f2I-Yo-pHD" secondAttribute="leadingMargin" constant="19" id="f43-O4-1O1"/>
+                            <constraint firstItem="BT3-hA-sGI" firstAttribute="top" secondItem="6Uf-wA-e8q" secondAttribute="bottom" constant="8" id="j2P-7A-PE9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja0-Mu-irW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3624" y="411"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CroppedMe" width="216" height="288"/>
+        <image name="Snow" width="360" height="204"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VLL-QT-RY0"/>
+        <segue reference="8HY-aq-QDK"/>
+        <segue reference="VeX-CD-st9"/>
+        <segue reference="zOk-fj-IiD"/>
+        <segue reference="tmV-SO-Wm3"/>
+        <segue reference="Y90-1P-Feu"/>
+    </inferredMetricsTieBreakers>
+</document>

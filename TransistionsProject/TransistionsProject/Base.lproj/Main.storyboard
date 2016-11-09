@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TransistionsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zDl-yF-K9V">
+                                <rect key="frame" x="209" y="285" width="183" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDl-W3-5mA">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
+                                        <state key="normal" title="Click to change the screen"/>
+                                        <connections>
+                                            <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNV-zB-YqC"/>
+                                            <segue destination="gyW-3y-1Pf" kind="show" identifier="toUpdatedView" id="WmO-3l-PfP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="333"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="za1-Lz-El1">
+            <objects>
+                <viewController id="vnv-li-5K4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jZo-fZ-hbr"/>
+                        <viewControllerLayoutGuide type="bottom" id="sJY-VC-XUQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kJS-Iq-bhs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="996-sB-n1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="1105"/>
+        </scene>
+        <!--Updated View Controller-->
+        <scene sceneID="2EA-WD-plW">
+            <objects>
+                <viewController id="gyW-3y-1Pf" customClass="UpdatedViewController" customModule="TransistionsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ysx-9U-sDB"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8B-Su-Tdt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G12-0J-ive">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="A  Bird 2" translatesAutoresizingMaskIntoConstraints="NO" id="oVF-UV-tuk">
+                                <rect key="frame" x="150" y="28" width="284" height="177"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="SnowBoarding 2" translatesAutoresizingMaskIntoConstraints="NO" id="gYQ-Ex-9f6">
+                                <rect key="frame" x="160" y="304" width="265" height="190"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="gYQ-Ex-9f6" id="Fpc-rP-Zd8"/>
+                        <outlet property="topImage" destination="oVF-UV-tuk" id="FAF-XG-y2g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfl-zJ-PLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="A  Bird 2" width="284" height="177"/>
+        <image name="SnowBoarding 2" width="265" height="190"/>
+    </resources>
+</document>
